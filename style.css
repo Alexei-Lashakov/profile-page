@@ -1,0 +1,99 @@
+@font-face {
+    font-family: helvari;
+    src: url(./fonts/helvari.ttf);
+}
+
+body {
+    font-family: helvari, Arial, Tahoma, sans-serif;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #e9e9e9;
+}
+
+h1 {
+    text-align: center;
+    color: #73726f;
+}
+
+.main-container {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    padding: 20px 40px 40px;
+}
+
+.container_image {
+    padding: 30px;
+}
+
+.container_image_input {
+    padding-bottom: 20px;
+}
+
+input {
+    display: block;
+    border: none;
+    border-bottom: 2px solid #e9e9e9;
+    padding: 25px 5px;
+    font-size: 1.5rem;
+    color: #73726f;
+}
+
+input[type="submit"] {
+    border: none;
+    background-color: #e9e9e9;
+    padding: 10px 80px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label:after {
+    display: block;
+    content: "Upload Photo";
+    font-size: 1.5rem;
+    color: #73726f;
+    width: 150px;
+    border: none;
+    background-color: #e9e9e9;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+input:valid:not(:placeholder-shown) {
+    border-color: green;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+input:invalid:not(:placeholder-shown) + .form__error {
+    display: block;
+}
+
+.form__error {
+    color: red;
+    text-align: left;
+    font-size: 16px;
+    margin-top: 3px;
+    display: none;
+}
